@@ -160,8 +160,7 @@ ul.predicciones li strong {
 }
 
 .slide img {
-    width: 40%;
-    height: 50%;
+    width: 100%;
 }
 
 .slide p {
