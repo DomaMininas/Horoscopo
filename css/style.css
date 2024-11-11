@@ -49,10 +49,9 @@ nav ul li a:hover {
     background-color: rgba(82, 25, 65, 0.733);
 }
 
-/* Estilo de secciones */
 section {
-    padding: 20px;
-    margin: 20px;
+    padding: 2%;
+    margin: 13%;
     background-color: rgba(21, 28, 71, 0.6);
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -62,7 +61,6 @@ h1, h2 {
     color: #ffffff;
 }
 
-/* Estilo de formularios */
 form input, form textarea, form button {
     width: 100%;
     padding: 10px;
@@ -82,7 +80,6 @@ form button:hover {
     background-color: #2980b9;
 }
  
-/* Estilo para las predicciones de horóscopos */
 ul.predicciones {
     list-style: none;
     padding: 0;
@@ -100,7 +97,6 @@ ul.predicciones li strong {
     color: #e74c3c;
 }
 
-/* Sección de compatibilidad */
 .compatibilidad {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -153,6 +149,7 @@ ul.predicciones li strong {
     border: 1px solid #ccc;
     margin: 10px 0;
     border-radius: 8px;
+    align-items: center;
 }
 
 .slide h3 {
@@ -162,18 +159,21 @@ ul.predicciones li strong {
     text-align: center;
 }
 
+.slide img {
+    width: 40%;
+    height: 50%;
+}
+
 .slide p {
     font-size: 1em;
     color: #ffffff; 
     text-align: center;
 }
 
-/* Mostrar la primera diapositiva por defecto */
 .slide:nth-child(1) {
     display: block;
 }
 
-/* Estilos para los controles (opcional) */
 .controls {
     position: absolute;
     top: 50%;
@@ -184,9 +184,10 @@ ul.predicciones li strong {
 
 .controls button {
     background-color: rgba(0, 0, 0, 0.5);
-    color: rgb(0, 0, 0);
-    padding: 10px;
+    color: rgb(151, 80, 136);
+    padding: 2%;
     border: none;
+    border-radius: 20%;
     cursor: pointer;
 }
 
@@ -237,56 +238,48 @@ ul.predicciones li strong {
     background-color: rgba(82, 25, 65, 0.733);
 }
 
-/* Sección de contenido */
 .contenido {
-    padding: 20px;
+    padding: 2%;
     text-align: center;
-    max-width: 1200px; /* Limitar el ancho máximo para que las tarjetas no se estiren demasiado */
-    margin: 0 auto; /* Centrar el contenedor */
-    margin-top: 40px;
-    margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin: 13%;
     background-color: rgba(21, 28, 71, 0.6);
 }
 
-/* Contenedor de las tarjetas - Usamos flexbox */
 .cards {
-    display: flex; /* Usamos flexbox en lugar de grid */
-    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en una nueva línea si no hay espacio */
-    justify-content: center; /* Centra las tarjetas horizontalmente */
-    gap: 50px; /* Espacio entre las tarjetas */
-    width: 100%; /* Asegura que la grilla ocupe todo el ancho disponible */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
 }
 
-/* Estilo para cada tarjeta */
 .card {
     background-image: url('/img/simboloszodiaco.jpg');
     background-color: rgba(255, 255, 255, 0.6);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centra el contenido dentro de la tarjeta */
-    transition: transform 0.3s ease; /* Agrega una transición para el efecto hover */
-    width: 250px; /* Establece un ancho fijo para las tarjetas */
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 250px;
 }
 
-/* Efecto cuando el ratón pasa sobre la tarjeta */
 .card:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño cuando se pasa el ratón */
+    transform: scale(1.05);
 }
 
-/* Estilo para los encabezados dentro de las tarjetas */
 .card h3 {
     color: #000000;
     font-size: 1.5rem;
 }
 
-/* Estilo para los párrafos dentro de las tarjetas */
 .card p {
     font-size: 1rem;
     color: #000000;
 }
 
-/* Estilo para los enlaces dentro de las tarjetas */
 .card a {
     display: inline-block;
     margin-top: 10px;
